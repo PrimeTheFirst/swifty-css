@@ -1,36 +1,67 @@
+/*Centering stuff*/
 .center-text{
 	margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-right: -50%;
+ transform: translate(-50%, -50%)
 }
 .h-center-text{
 	text-align: center;
 }
 .v-center-text{
-	  margin: 0;
+   margin: 0;
    position: absolute;     
    top: 50%;                 
    transform: translate(0, -50%)
 }
 
 .v-center-img{
-	  margin: 0;
+   margin: 0;
    position: absolute;     
    top: 50%;                 
    transform: translate(0, -50%)
 }
 .h-center-img{
-    display:block;
-    margin:auto;
+ display:block;
+ margin:auto;
 }
 .center-img{
    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%)
 }
+
+
+/*Buttons*/
+.sw-btn{
+   padding: 7px;
+   font-size: 15px;
+   letter-spacing: 0.07em;
+}
+.sw-btn:active:hover {
+   filter: brightness(90%);
+   filter: saturate(50%);
+   outline: none;
+}
+.sw-btn:hover {
+   filter: brightness(95%);
+   filter: saturate(70%);
+   outline: none;
+}
+
+.primary{
+   background: #0d6efd;
+   color: white;
+   border-style: solid;
+   border-radius: 5px;
+   padding: 7px;
+   font-size: 15px;
+   letter-spacing: 0.07em;
+}
+
+
