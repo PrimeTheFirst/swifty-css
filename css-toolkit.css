@@ -45,14 +45,15 @@
 }
 .sw-btn:active:hover {
    filter: brightness(90%);
-   filter: saturate(50%);
+   filter: saturate(60%);
    outline: none;
 }
 .sw-btn:hover {
    filter: brightness(95%);
-   filter: saturate(70%);
+   filter: saturate(80%);
    outline: none;
 }
+
 
 .primary{
    background: #0d6efd;
@@ -64,4 +65,13 @@
    letter-spacing: 0.07em;
 }
 
+.disabled{
+   background: #A4A5A7;
+   color: white;
+   border-style: solid;
+   border-radius: 5px;
+   padding: 7px;
+   font-size: 15px;
+   letter-spacing: 0.07em;
+}
 
