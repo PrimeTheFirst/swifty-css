@@ -1,8 +1,8 @@
 # css-toolkit 
 
-Your everyday toolkit to make _you_ write code faster without having to research ! <br />
+Many developers have a tough time doing simple stuff with css . Like centering . This is your everyday toolkit to make _you_ write code faster without having to research ! <br />
 Coming to cdn soon ! As of now , you can download the code . Lots of more features to come ! Stay tuned !
-Just make the class to one of the following classes .
+To use , just make the class of the required element to one of the following .
 
 ## Tutorial
    ### Centering
