@@ -1,11 +1,11 @@
 /*Centering stuff*/
 .center-text{
 	margin: 0;
- position: absolute;
- top: 50%;
- left: 50%;
- margin-right: -50%;
- transform: translate(-50%, -50%)
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
 .h-center-text{
 	text-align: center;
@@ -24,8 +24,8 @@
    transform: translate(0, -50%)
 }
 .h-center-img{
- display:block;
- margin:auto;
+  display:block;
+  margin:auto;
 }
 .center-img{
    margin: 0;
@@ -42,16 +42,22 @@
    padding: 7px;
    font-size: 15px;
    letter-spacing: 0.07em;
+   margin: 5px;
 }
 .sw-btn:active:hover {
    filter: brightness(90%);
    filter: saturate(60%);
-   outline: none;
 }
 .sw-btn:hover {
-   filter: brightness(95%);
+   filter: brightness(90%);
    filter: saturate(80%);
+   cursor: pointer;
    outline: none;
+}
+.sw-btn:focus {
+   outline-style: solid;
+   outline-color: #7fbdff;
+   outline-width: 4px;
 }
 
 
@@ -66,7 +72,7 @@
 }
 
 .secondary{
-   background: #A4A5A7;
+   background: #B7C5E0;
    color: white;
    border-style: solid;
    border-radius: 5px;
