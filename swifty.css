@@ -1,19 +1,19 @@
 /*Centering stuff*/
 .center-text{
-	margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%)
 }
 .h-center-text{
-	text-align: center; 
+   text-align: center; 
 }
 
 .h-center-btn{
-    margin: 0 auto;
-    display: block;
+  margin: 0 auto;
+  display: block;
 }
 .v-center-text{
    margin: 0;
@@ -29,8 +29,8 @@
    transform: translate(0, -50%)
 }
 .h-center-img{
-  display:block;
-  margin:auto;
+ display:block;
+ margin:auto;
 }
 .center-img{
    margin: 0;
@@ -43,64 +43,112 @@
 
 
 /*Buttons*/
-.sw-btn{
+[class*=sw-btn-solid]{
    padding: 7px;
    font-size: 15px;
    letter-spacing: 0.07em;
+   transition: 0.1s;
+   border-style: solid;
+   border-radius: 5px;
 }
-.sw-btn:active:hover {
+[class*=sw-btn-solid]:active:hover {
    filter: brightness(90%);
    filter: saturate(60%);
 }
-.sw-btn:hover {
+[class*=sw-btn-solid]:hover {
    filter: brightness(90%);
    filter: saturate(80%);
    cursor: pointer;
    outline: none;
 }
-.sw-btn:focus {
+[class*=sw-btn]:focus {
    outline-style: solid;
-   outline-color: #7fbdff;
    outline-width: 4px;
 }
 
 
-.primary{
+.sw-btn-solid-primary{
    background: #0d6efd;
    color: white;
-   border-style: solid;
-   border-radius: 5px;
-   padding: 7px;
-   font-size: 15px;
-   letter-spacing: 0.07em;
+   border-color: #0d6efd;
 }
-
-.secondary{
-   background: #B7C5E0;
+.sw-btn-solid-primary:focus{outline-color: #7fbdff;}
+   
+.sw-btn-solid-secondary{
+   background: #6c757d;
    color: white;
-   border-style: solid;
-   border-radius: 5px;
-   padding: 7px;
-   font-size: 15px;
-   letter-spacing: 0.07em;
+   border-color: #6c757d;
 }
+.sw-btn-solid-secondary:focus{outline-color: #b5babe;}
 
-.danger{
+.sw-btn-solid-danger{
    background: red;
    color: white;
-   border-style: solid;
-   border-radius: 5px;
-   padding: 7px;
-   font-size: 15px;
-   letter-spacing: 0.07em;
+   border-color: red;
 }
-.success{
+.sw-btn-solid-danger:focus{outline-color: #ed9aa2;}
+
+
+.sw-btn-solid-success{
    background: green;
    color: white;
-   border-style: solid;
-   border-radius: 5px;
+   border-color: green;
+}
+.sw-btn-solid-success:focus{outline-color: #93d3a2;}
+
+
+/*Outline Buttons*/
+[class*=sw-btn-outline]{ 
    padding: 7px;
    font-size: 15px;
    letter-spacing: 0.07em;
-}
+   transition: 0.2s;
+   border-style: solid;
+   border-radius: 5px;
+   background: white;
+} /*This one styles all elements with sw-outline text in their class*/
 
+
+/*Primary outline styling start*/
+[class*=outline-primary]{
+   color: #0d6efd;
+   border-color: #0d6efd;
+}
+[class*=outline-primary]:hover{
+   background: #0d6efd;
+   color: white;
+}
+[class*=outline-primary]:focus{outline-color: #7fbdff;}
+/*Primary outline styling finish*/
+
+
+[class*=outline-secondary]{
+   color: #6c757d;
+   border-color: #6c757d;
+}
+[class*=outline-secondary]:hover{
+   background: #6c757d;
+   color: white;
+}
+[class*=outline-secondary]:focus{outline-color: #b5babe;}
+
+
+[class*=outline-danger]{
+   color: red;
+   border-color: red;
+}
+[class*=outline-danger]:hover{
+   background: red;
+   color: white;
+}
+[class*=outline-danger]:focus{outline-color: #ed9aa2;}
+
+[class*=outline-success]{
+   color: green;
+   border-color: green;
+}
+[class*=outline-success]:hover{
+   background: green;
+   color: white;
+}
+[class*=outline-success]:focus{outline-color: #93d3a2;}
