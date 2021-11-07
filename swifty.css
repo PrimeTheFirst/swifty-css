@@ -107,7 +107,7 @@
    border-radius: 5px;
    background: white;
 } /*This one styles all elements with sw-outline text in their class*/
-[class*=sw-btn-outline]:focus{ 
+[class*=sw-btn-outline]:hover{ 
    cursor: pointer;
 } 
 
