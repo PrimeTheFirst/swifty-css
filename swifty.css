@@ -155,3 +155,17 @@
    color: white;
 }
 [class*=outline-success]:focus{outline-color: #93d3a2;}
+
+
+/*Inputs*/
+[class*=sw-inp]:focus{
+   outline-style: solid;
+   outline-width: 4px;
+   outline-color: #7fbdff;
+}
+[class*=sw-inp]{
+   border-style: solid;
+   border-radius: 5px;
+   padding: 5px;
+   transition: 0.2s;
+}
