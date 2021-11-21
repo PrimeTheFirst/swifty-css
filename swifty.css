@@ -67,38 +67,40 @@
 }
 
 
-.sw-btn-solid-primary{
+[class*=sw-btn-solid-primary]{
    background: #0d6efd;
    color: white;
    border-color: #0d6efd;
 }
-.sw-btn-solid-primary:focus{outline-color: #7fbdff;}
+[class*=sw-btn-solid-primary]:focus{outline-color: #7fbdff;}
 
-.sw-btn-solid-secondary{
+
+[class*=sw-btn-solid-secondary]{
    background: #6c757d;
    color: white;
    border-color: #6c757d;
 }
-.sw-btn-solid-secondary:focus{outline-color: #b5babe;}
+[class*=sw-btn-solid-secondary]:focus{outline-color: #b5babe;}
 
-.sw-btn-solid-danger{
+[class*=sw-btn-solid-danger]{
    background: red;
    color: white;
    border-color: red;
 }
-.sw-btn-solid-danger:focus{outline-color: #ed9aa2;}
+[class*=sw-btn-solid-danger]:focus{outline-color: #ed9aa2;}
 
 
-.sw-btn-solid-success{
+[class*=sw-btn-solid-success]{
    background: green;
    color: white;
    border-color: green;
 }
-.sw-btn-solid-success:focus{outline-color: #93d3a2;}
+[class*=sw-btn-solid-success]:focus{outline-color: #93d3a2;}
 
 
 /*Outline Buttons*/
 [class*=sw-btn-outline]{ 
+   text-decoration: none;
    padding: 7px;
    font-size: 15px;
    letter-spacing: 0.07em;
@@ -156,6 +158,9 @@
 }
 [class*=outline-success]:focus{outline-color: #93d3a2;}
 
+[class$=link]{ /*If ends with link*/
+   text-decoration: none;
+}
 
 /*Inputs*/
 [class*=sw-inp]:focus{
