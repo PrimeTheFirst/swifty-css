@@ -27,19 +27,32 @@
 	}
 	#content{
 		display: inline-block;
+		position: absolute;
+		margin: 10px;
+	}
+	.code{
+		background: lightgrey;
+		margin: 2px;
+		border-style: solid;
+		border-color: lightgrey;
+		border-radius: 5px;
 	}
 </style>
 <body>
 	<div class="nav">
 		<h1>Methods</h1>
-		<hr style="width:95%;margin: 0px auto;">
-		<h2>Centering</h2>
+		<hr style="width:95%;margin: 0px auto;display: inline-block;">
+		<h2>Centering</h2> <br>
 		&nbsp;&nbsp;&nbsp;&nbsp;<a href="#center-text" class="sw-btn-solid-primary-link">center-text</a>
 	</div>
 
 	<div id="content">
-		<h1 id="center-text">center-text</h1>
-		<p>Usage : Center the text horizontally and vertically</p>
+		<div id="center-text">
+			<h1>center-text</h1>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Use : Center the text horizontally and vertically</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Example:<span class="code"> &lt;p class='center-text'&gt; Hi ! I'm centered ! &lt;/p&gt; </span> </p>
+		</div>
+		
 	</div>
 	
 </body>
