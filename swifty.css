@@ -170,6 +170,31 @@
    transition: 0.2s;
 }
 
+
+/*Showcase*/
+[class*='sw-showcase']{
+   padding: 25px;
+   background: #e9ecef;
+   display: block;
+   border-radius: 5px;
+}
+[class*='sw-showcase']>.head{
+   font-size: 7vh;
+   font-weight: 100;
+}
+[class*='sw-showcase']>.sub{
+   font-weight: 100;
+   color: grey;
+   letter-spacing: 0.2px;
+   font-size: 5vh;
+}
+[class*='sw-showcase']>.body{
+   font-weight: 100;
+   letter-spacing: 0.2px;
+   font-size: 4vh;
+}
+
+
 @media screen and (max-width: 600px) {
    [class*='sw-btn'],[class*='sw-inp']{
       height: 10vh;
