@@ -1,0 +1,19 @@
+{
+  "name": "swifty-css",
+  "version": "1.0.5",
+  "description": "A tool that makes it easy for you to write code faster.",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrateekPathak9002/swifty-css.git"
+  },
+  "author": "prateek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrateekPathak9002/swifty-css/issues"
+  },
+  "homepage": "https://github.com/PrateekPathak9002/swifty-css#readme"
+}
