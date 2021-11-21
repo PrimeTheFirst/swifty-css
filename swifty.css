@@ -203,8 +203,12 @@
 }
 
 @media screen and (min-width: 1000px) {
-   [class*='sw-btn'],[class*='sw-inp']{
+   [class*='sw-btn']{
       height: 6vh;
+      font-size: 15px;
+   }
+   [class*='sw-inp']{
+      height: 2rem;
       font-size: 15px;
    }
 }
