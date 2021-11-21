@@ -1,6 +1,6 @@
 {
   "name": "swifty-css",
-  "version": "1.0.8",
+  "version": "1.0.7",
   "description": "A tool that makes it easy for you to write code faster.",
   "main": "index.css",
   "scripts": {
