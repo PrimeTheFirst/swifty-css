@@ -91,19 +91,41 @@
 				$('.nav').append(`<h2>${a.newHead[1]}</h2><br>`)
 			}
 			$('.nav').append(`&nbsp;&nbsp;&nbsp;&nbsp;<a href="#${a.class_name}" class="sw-btn-solid-primary-link" style='position:relative;'>${a.class_name}</a><br><br><br>`)
+			$(".nav").css('height', '200%');
 		}
 		makeClass({
 			class_name:'center-text',
-			purpose:'Center the text horizontally and vertically',
+			purpose:'Center text horizontally and vertically',
 			codeEX:"&lt;p class='center-text'&gt; Hi ! I'm centered ! &lt;/p&gt;",
 			liveLink:'https://swifty-css-wiki-centering-text-class.prateekpathak1.repl.co/',
 			newHead:[true,'Centering']
 		})
 		makeClass({
 			class_name:'v-center-text',
-			purpose:'Center the text vertically',
+			purpose:'Center text vertically',
 			codeEX:"&lt;p class='v-center-text'&gt; Hi ! I'm vertically centered ! &lt;/p&gt;",
 			liveLink:'https://swifty-css-wiki-v-centering-text-class.prateekpathak1.repl.co',
+			newHead:[false]
+		})
+		makeClass({
+			class_name:'h-center-text',
+			purpose:'Center text horizontally',
+			codeEX:"&lt;p class='h-center-text'&gt; Hi ! I'm horizontally centered ! &lt;/p&gt;",
+			liveLink:'https://swifty-css-wiki-h-centering-text-class.prateekpathak1.repl.co',
+			newHead:[false]
+		})
+		makeClass({
+			class_name:'h-center-btn',
+			purpose:'Center a button horizontally . To center button in middle or vertically use center-text and v-center-text respectively',
+			codeEX:"&lt;p class='h-center-text'&gt; Hi ! I'm horizontally centered ! &lt;/p&gt;",
+			liveLink:'https://swifty-css-wiki-h-centering-text-class.prateekpathak1.repl.co',
+			newHead:[false]
+		})
+		makeClass({
+			class_name:'v-center-img',
+			purpose:'Center a image horizontally . To center button in middle or vertically use center-text and v-center-text respectively',
+			codeEX:"&lt;p class='h-center-text'&gt; Hi ! I'm horizontally centered ! &lt;/p&gt;",
+			liveLink:'https://swifty-css-wiki-h-centering-text-class.prateekpathak1.repl.co',
 			newHead:[false]
 		})
 	</script>
