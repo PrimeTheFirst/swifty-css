@@ -100,7 +100,6 @@
 
 /*Outline Buttons*/
 [class*=sw-btn-outline]{ 
-   text-decoration: none;
    padding: 7px;
    font-size: 15px;
    letter-spacing: 0.07em;

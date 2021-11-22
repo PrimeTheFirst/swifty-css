@@ -5,6 +5,7 @@
 	<title>Document</title>
 	<!-- <link rel="stylesheet" href="https://unpkg.com/swifty-css@1.0.9/swifty.css"> -->
 	<link rel="stylesheet" href="../swifty.css">
+	    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 </head>
 <style>
 	body,html {
@@ -42,22 +43,69 @@
 <body>
 	<div class="nav">
 		<br>
-		<input type="text" class="sw-inp" placeholder="Search all classes">
+		<input type="text" class="sw-inp" placeholder="Search all classes" id="search" oninput="search()">
 		<h1>Classes</h1>
 		<hr style="width:95%;margin: 0px auto;display: inline-block;">
-		<h2>Centering</h2> <br>
-		&nbsp;&nbsp;&nbsp;&nbsp;<a href="#center-text" class="sw-btn-solid-primary-link">center-text</a>
+
 	</div>
 
-	<div id="content">
-		<div id="center-text">
-			<h1>center-text</h1>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Purpose : Center the text horizontally and vertically</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Code example:<span class="code"> &lt;p class='center-text'&gt; Hi ! I'm centered ! &lt;/p&gt; </span> </p>
-			 &nbsp;&nbsp;&nbsp;&nbsp;<button class="sw-btn-outline-primary-link"><a href="">Live example </a></button>
-		</div>
-		
-	</div>
+	<div id="content"></div>
 	
+	<script>
+		function search() {
+			let inpVal = document.getElementById('search').value
+			let _classes = document.getElementById('content').querySelectorAll('div')
+			let classes_id = []
+			for(var i = 0 ; i < _classes.length ; i++ ){
+				classes_id.push(_classes[i].id)
+			}
+			for(var m = 0 ; m < classes_id.length ; m++ ){
+				if (classes_id[m].includes(inpVal)) {
+					$(`#${classes_id[m]}`).css({
+						'visibility': 'visible',
+						'position': 'relative',
+					});
+					
+				}else {
+					$(`#${classes_id[m]}`).css({
+						'visibility': 'hidden',
+						'position': 'absolute',
+					});
+				}
+			}
+		}
+
+
+		function makeClass(a) {
+			let div = `
+				<div id="${a.class_name}">
+			<h1>${a.class_name}</h1>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Purpose :${a.purpose}</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Code example:<span class="code">${a.codeEX}</span> </p> <br>
+			 &nbsp;&nbsp;&nbsp;&nbsp;<a href="${a.liveLink}" class="sw-btn-outline-primary-link" target="_blank" rel="noopener noreferrer">Live example </a>
+			</div>
+			`
+			$("#content").append(div)
+
+			if (a.newHead[0]) {
+				$('.nav').append(`<h2>${a.newHead[1]}</h2><br>`)
+			}
+			$('.nav').append(`&nbsp;&nbsp;&nbsp;&nbsp;<a href="#${a.class_name}" class="sw-btn-solid-primary-link" style='position:relative;'>${a.class_name}</a><br><br><br>`)
+		}
+		makeClass({
+			class_name:'center-text',
+			purpose:'Center the text horizontally and vertically',
+			codeEX:"&lt;p class='center-text'&gt; Hi ! I'm centered ! &lt;/p&gt;",
+			liveLink:'https://swifty-css-wiki-centering-text-class.prateekpathak1.repl.co/',
+			newHead:[true,'Centering']
+		})
+		makeClass({
+			class_name:'v-center-text',
+			purpose:'Center the text vertically',
+			codeEX:"&lt;p class='v-center-text'&gt; Hi ! I'm vertically centered ! &lt;/p&gt;",
+			liveLink:'https://swifty-css-wiki-v-centering-text-class.prateekpathak1.repl.co',
+			newHead:[false]
+		})
+	</script>
 </body>
 </html>
