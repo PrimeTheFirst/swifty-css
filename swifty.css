@@ -199,7 +199,7 @@
 }
 
 
-.dropdown-text{
+.head{
    background: #ECE9E9;
    border-radius: 3px;
    padding: 5px;
@@ -209,6 +209,7 @@
 /*Dropdown classes*/
 .sw-dropdown-options{
    display: none;
+   
 }
 
 @media screen and (max-width: 600px) {
