@@ -5,8 +5,8 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
-	<script src="https://unpkg.com/swifty_js_toolkit@1.1.1/swifty.js"></script>
-	<link rel="stylesheet" href="https://unpkg.com/swifty-css@1.1.0/swifty.css">
+	<script src="https://unpkg.com/swifty_js_toolkit@1.1.2/swifty.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swifty-css@1.1.1/swifty.css">
 
 </head>
 <style>
@@ -19,7 +19,7 @@
 		padding-top: 0.02px;
 		height: 100vh;
 		width: 20vw;
-		background: lightgrey;
+		background: lightblue;
 		display: inline-block;
 		position: fixed;
 		left: 79vw;
@@ -28,7 +28,6 @@
 		.nav{
 			height: 100vh;
 			width: 20vh;
-			background: lightgrey;
 		}
 	}
 	#content{
@@ -43,6 +42,18 @@
 		border-color: lightgrey;
 		border-radius: 5px;
 	}
+	.head{
+		width: 150px;
+		background: #93D2E6;
+	}
+	.sw-dropdown-option{
+		background: lightskyblue;
+
+	}
+	.sw-dropdown-option:hover{
+		background: #A0D7F9;
+
+	}
 </style>
 <body>
 	<div class="nav">
@@ -55,6 +66,8 @@
 
 	<div id="content"></div>
 	<script>
+
+
 		function search() {
 			let inpVal = document.getElementById('search').value
 			let _classes = document.getElementById('content').querySelectorAll('div')
@@ -81,26 +94,26 @@
 
 		function makeClass(a) {
 			let div = `
-				<div id="${a.class_name}">
+			<div id="${a.class_name}">
 			<h1>${a.class_name}</h1>
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;Purpose :${a.purpose}</p>
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;Code example:<span class="code">${a.codeEX}</span> </p> <br>
-			 &nbsp;&nbsp;&nbsp;&nbsp;<a href="${a.liveLink}" class="sw-btn-outline-primary-link" target="_blank" rel="noopener noreferrer">Live example </a>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a href="${a.liveLink}" class="sw-btn-outline-primary-link" target="_blank" rel="noopener noreferrer">Live example </a>
 			</div>
 			`
 			$("#content").append(div)
 
 			if (a.newHead[0]) {
 				$('.nav').append(`<div class="sw-dropdown" > 
-					<h2 class="sw-dropdown">${a.newHead[1]}</h2> 
+					<h2 class="head">${a.newHead[1]}</h2> 
 					<div class="sw-options" id='${a.newHead[1]}'>
 
 					</div>
 					</div>`)
-			}else {
-				console.log(document.getElementById(`${a.newHead[1]}`).innerHTML)
-				document.getElementById(`${a.newHead[1]}`).innerHTML += `<a class="sw-dropdown-option" href="#${a.class_name}">${a.class_name}</a> <br> <br>`
 			}
+
+			document.getElementById(`${a.newHead[1]}`).innerHTML += `<a class="sw-dropdown-option" href="#${a.class_name}">${a.class_name}</a> <br> <br>`
+			
 
 		}
 		makeClass({
