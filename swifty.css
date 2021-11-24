@@ -200,22 +200,21 @@
 
 
 /*Dropdown classes*/
-.sw-dropdown-options{
-   /*display: none;*/
-   margin-left: 10px;
-   margin: 7px;
-   background:white ;
-   padding-right: 20px;
-   padding-left: 20px;
-   padding-bottom: 10px;
-   padding-top: 10px;
-   margin-bottom: 50px;
+.sw-dropdown{
+   display: inline-block
+}
+
+.sw-dropdown-option{
    background:#FAFAFA ;
    transition: visibility 0s, opacity 0.5s linear;
 }
-.sw-dropdown-options:hover{
+.sw-dropdown-option:hover{
    background:#EFEEEE ;
    text-decoration: none;
+}
+.sw-options{
+   padding-right: 20px;
+   padding-left: 20px;
 }
 .down{
    float: right;
