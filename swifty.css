@@ -208,10 +208,10 @@
    padding: 10px;
    background:#FAFAFA ;
    transition: visibility 0s, opacity 0.5s linear;
+   text-decoration: none;
 }
 .sw-dropdown-option:hover{
    background:#EFEEEE ;
-   text-decoration: none;
 }
 .sw-options{
    padding-right: 20px;
