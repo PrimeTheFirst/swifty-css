@@ -64,7 +64,11 @@
 
 	</div>
 
-	<div id="content"></div>
+
+	<div id="content">
+		<h1>Docs</h1>
+	<h2>Centering</h2>
+	</div>
 	<script>
 
 
@@ -95,7 +99,7 @@
 		function makeClass(a) {
 			let div = `
 			<div id="${a.class_name}">
-			<h1>${a.class_name}</h1>
+			<h3>${a.class_name}</h3>
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;Purpose :${a.purpose}</p>
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;Code example:<span class="code">${a.codeEX}</span> </p> <br>
 			&nbsp;&nbsp;&nbsp;&nbsp;<a href="${a.liveLink}" class="sw-btn-outline-primary-link" target="_blank" rel="noopener noreferrer">Live example </a>
@@ -116,6 +120,8 @@
 			
 
 		}
+
+
 		makeClass({
 			class_name:'center-text',
 			purpose:'Center text horizontally and vertically',
@@ -141,14 +147,28 @@
 			class_name:'h-center-btn',
 			purpose:'Center a button horizontally . To center button in middle or vertically use center-text and v-center-text respectively',
 			codeEX:"&lt;p class='h-center-btn'&gt; Hi ! I'm horizontally centered ! &lt;/p&gt;",
-			liveLink:'https://swifty-css-wiki-h-centering-text-class.prateekpathak1.repl.co',
+			liveLink:'https://swifty-css-wiki-h-center-btn-class.prateekpathak1.repl.co',
+			newHead:[false,'Centering']
+		})
+		makeClass({
+			class_name:'h-center-img',
+			purpose:'Center a image horizontally .',
+			codeEX:"&lt;p class='h-center-img'&gt; Hi ! I'm horizontally centered ! &lt;/p&gt;",
+			liveLink:'https://swifty-css-wiki-h-center-img-class.prateekpathak1.repl.co',
 			newHead:[false,'Centering']
 		})
 		makeClass({
 			class_name:'v-center-img',
-			purpose:'Center a image horizontally . To center button in middle or vertically use center-text and v-center-text respectively',
-			codeEX:"&lt;p class='v-center-img'&gt; Hi ! I'm horizontally centered ! &lt;/p&gt;",
-			liveLink:'https://swifty-css-wiki-h-centering-text-class.prateekpathak1.repl.co',
+			purpose:'Center a image vertically .',
+			codeEX:"&lt;img class='v-center-img' src='...' &gt;",
+			liveLink:'https://swifty-css-wiki-v-center-img-classprateekpathak.prateekpathak1.repl.co',
+			newHead:[false,'Centering']
+		})
+		makeClass({
+			class_name:'center-img',
+			purpose:'Center a image vertically and horizontally.',
+			codeEX:"&lt;img class='center-img' src='...' &gt;",
+			liveLink:'https://swifty-css-wiki-center-img-class.prateekpathak1.repl.co',
 			newHead:[false,'Centering']
 		})
 	</script>
