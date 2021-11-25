@@ -67,7 +67,7 @@
 
 	<div id="content">
 		<h1>Docs</h1>
-	<h2>Centering</h2>
+		<h2>Centering</h2>
 	</div>
 	<script>
 
@@ -121,6 +121,31 @@
 
 		}
 
+		function makeButtonClass(a) {
+			let div = `
+			<div id="${a.class_name}">
+			<h3>${a.class_name}</h3>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Purpose :${a.purpose}</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Solid button code example:<span class="code">${a.codeEX[0]}</span> </p> 
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Outline button code example:<span class="code">${a.codeEX[1]}</span> </p> <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a href="${a.liveLink}" class="sw-btn-outline-primary-link" target="_blank" rel="noopener noreferrer">Live example </a>
+			</div>
+			`
+			$("#content").append(div)
+
+			if (a.newHead[0]) {
+				$('.nav').append(`<div class="sw-dropdown" > 
+					<h2 class="head">${a.newHead[1]}</h2> 
+					<div class="sw-options" id='${a.newHead[1]}'>
+
+					</div>
+					</div>`)
+			}
+
+			document.getElementById(`${a.newHead[1]}`).innerHTML += `<a class="sw-dropdown-option" href="#${a.class_name}">${a.class_name}</a> <br> <br>`
+			
+
+		}
 
 		makeClass({
 			class_name:'center-text',
@@ -170,6 +195,26 @@
 			codeEX:"&lt;img class='center-img' src='...' &gt;",
 			liveLink:'https://swifty-css-wiki-center-img-class.prateekpathak1.repl.co',
 			newHead:[false,'Centering']
+		})
+
+		$("#content").append('<br><br>')
+		$("#content").append('<h2>Buttons<h2>')
+		$("#content").append('<h3>NOTE:All buttons can either be solid or outlined. They are prefixed by sw-btn-solid- or sw-btn-outline-<h3>')
+		
+		makeButtonClass({
+			class_name:'-primary',
+			purpose:'Creates a primary button.',
+			codeEX:["&lt;button class='sw-btn-solid-primary'&gt &lt;button&gt","&lt;button class='sw-btn-outline-primary' &gt; &lt;button&gt"],
+			liveLink:'https://swifty-css-wiki-primary-button-class.prateekpathak1.repl.co/',
+			newHead:[true,'Buttons']
+		})
+
+		makeButtonClass({
+			class_name:'-secondary',
+			purpose:'Creates a secondary button.',
+			codeEX:["&lt;button class='sw-btn-solid-secondary'&gt &lt;button&gt","&lt;button class='sw-btn-outline-secondary' &gt; &lt;button&gt"],
+			liveLink:'https://swifty-css-wiki-secondary-button-class.prateekpathak1.repl.co',
+			newHead:[false,'Buttons']
 		})
 	</script>
 </body>
