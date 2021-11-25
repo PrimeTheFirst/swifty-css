@@ -14,15 +14,17 @@
 		margin:0;
 		padding:0;
 	}
+
 	.nav{
 		padding-left: 10px;
 		padding-top: 0.02px;
-		height: 100vh;
 		width: 20vw;
 		background: lightblue;
-		display: inline-block;
 		position: fixed;
 		left: 79vw;
+		top: 2px;
+		bottom: 2px;
+		overflow-y: scroll;
 	}
 	@media screen and (max-width:550px){
 		.nav{
@@ -216,6 +218,32 @@
 			liveLink:'https://swifty-css-wiki-secondary-button-class.prateekpathak1.repl.co',
 			newHead:[false,'Buttons']
 		})
+
+		makeButtonClass({
+			class_name:'-danger',
+			purpose:'Creates a danger button.',
+			codeEX:["&lt;button class='sw-btn-solid-danger'&gt &lt;button&gt","&lt;button class='sw-btn-outline-danger' &gt; &lt;button&gt"],
+			liveLink:'https://swifty-css-wiki-danger-button-class.prateekpathak1.repl.co',
+			newHead:[false,'Buttons']
+		})
+
+		makeButtonClass({
+			class_name:'-success',
+			purpose:'Creates a success button.',
+			codeEX:["&lt;button class='sw-btn-solid-success'&gt &lt;button&gt","&lt;button class='sw-btn-outline-success' &gt; &lt;button&gt"],
+			liveLink:'https://swifty-css-wiki-success-button-class.prateekpathak1.repl.co',
+			newHead:[false,'Buttons']
+		})
+
+
+		makeButtonClass({
+			class_name:'-link',
+			purpose:'Creates a link styled as a button.',
+			codeEX:["&lt;a class='sw-btn-solid-success-link'&gt &lt;a&gt","&lt;a class='sw-btn-outline-success-link' &gt; &lt;a&gt"],
+			liveLink:'https://swifty-css-wiki-link-button-class.prateekpathak1.repl.co',
+			newHead:[false,'Buttons']
+		})
+
 	</script>
 </body>
 </html>
