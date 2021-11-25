@@ -77,11 +77,16 @@
 		function search() {
 			let inpVal = document.getElementById('search').value
 			let _classes = document.getElementById('content').querySelectorAll('div')
+			let h1_classes = document.getElementById('content').querySelectorAll('h1')
+			let h2_classes = document.getElementById('content').querySelectorAll('h2')
+			let h3_classes = document.getElementById('content').querySelectorAll('h3')
 			let classes_id = []
 			for(var i = 0 ; i < _classes.length ; i++ ){
 				classes_id.push(_classes[i].id)
+				//console.log(_classes[i].id)
 			}
 			for(var m = 0 ; m < classes_id.length ; m++ ){
+				console.log(classes_id[m])
 				if (classes_id[m].includes(inpVal)) {
 					$(`#${classes_id[m]}`).css({
 						'visibility': 'visible',
@@ -95,6 +100,31 @@
 					});
 				}
 			}
+
+			if (inpVal!=='') {
+				for(var l = 0 ; l < h1_classes.length ; l++ ){
+					h1_classes[l].style.visibility = 'hidden'
+					h1_classes[l].style.position = 'absolute'
+				}
+				for(var w = 0 ; w < h2_classes.length ; w++ ){
+					h2_classes[w].style.visibility = 'hidden'
+					h2_classes[w].style.position = 'absolute'
+				}
+				$('.note').css('visibility', 'hidden');
+				$('.note').css('position', 'absolute');
+			}else {
+				for(var e = 0 ; e < h1_classes.length ; e++ ){
+					h1_classes[e].style.visibility = 'visible'
+					h1_classes[e].style.position = 'relative'
+				}
+				for(var v = 0 ; v < h2_classes.length ; v++ ){
+					h2_classes[v].style.visibility = 'visible'
+					h2_classes[v].style.position = 'relative'
+				}
+				$('.note').css('visibility', 'visible');
+				$('.note').css('position', 'relative');
+			}
+			
 		}
 
 
@@ -201,7 +231,7 @@
 
 		$("#content").append('<br><br>')
 		$("#content").append('<h2>Buttons<h2>')
-		$("#content").append('<h3>NOTE:All buttons can either be solid or outlined. They are prefixed by sw-btn-solid- or sw-btn-outline-<h3>')
+		$("#content").append('<h3 class="note">NOTE:All buttons can either be solid or outlined. They are prefixed by sw-btn-solid- or sw-btn-outline-<h3>')
 		
 		makeButtonClass({
 			class_name:'-primary',
@@ -244,6 +274,18 @@
 			newHead:[false,'Buttons']
 		})
 
+
+		$("#content").append('<br>')
+		$("#content").append('<h2>Inputs<h2>')
+
+
+		makeClass({
+			class_name:'sw-inp',
+			purpose:'Create a swifty input.',
+			codeEX:"&lt;input type='text' class='sw-inp' &gt;",
+			liveLink:'https://swifty-css-wiki-sw-inp-class.prateekpathak1.repl.co/',
+			newHead:[true,'Inputs']
+		})
 	</script>
 </body>
 </html>
