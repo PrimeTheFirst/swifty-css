@@ -201,13 +201,26 @@
 
 /*Dropdown classes*/
 .sw-dropdown{
-   display: inline-block
+   display: inline-block;
+   width: 100%;
 }
-
+.head:focus{
+   outline-style: solid;
+   outline-width: 4px;
+   outline-color: #7fbdff;
+}
+.head{
+   background: white;
+   border-radius: 3px;
+   padding: 5px;
+   width: 100%;
+   text-align: left;
+   margin-bottom: 15px;
+   transition: 0.3s;
+}
 .sw-dropdown-option{
    padding: 10px;
-   background:#FAFAFA ;
-   transition: visibility 0s, opacity 0.5s linear;
+   transition: opacity 2s linear;
    text-decoration: none;
 }
 .sw-dropdown-option:hover{
@@ -222,12 +235,7 @@
    transition: 0.1s;
 }
 
-.head{
-   background: #ECE9E9;
-   border-radius: 3px;
-   padding: 5px;
 
-}
 
 
 @media screen and (max-width: 600px) {
