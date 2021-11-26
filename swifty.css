@@ -244,14 +244,9 @@
 
 @media screen and (min-width: 601px){
    [class*='sw-btn']{
-      height: 6vh;
-      font-size: 15px;
+      font-size: 25px;
    }
-   [class*='sw-inp']{
-      font-size: 30px;
-      height: 7vh;
-      width:95%;
-   }
+   
 }
 
 
