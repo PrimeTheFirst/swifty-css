@@ -69,6 +69,14 @@
 
 	<div id="content">
 		<h1>Docs</h1>
+			<h2>Introduction</h2>
+		<div id="import">
+			<h3>Import</h3>
+			<p>The current version of swifty-css is <span id="version"></span> . Import it with <i><b>https://unpkg.com/swifty-css/swifty.css</b></i><p> 
+			<p>The current version of swifty_js_toolkit is <span id="version2"></span> . Import it with <i><b>https://unpkg.com/swifty_js_toolkit/swifty.js</b></i><p>
+			<p>To use swifty-css dropdowns/accordians , font awesome needs to be imported.Import with : <i><b>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></b></i></p> 
+		</div>
+		<br><br>
 		<h2>Centering</h2>
 	</div>
 	<script>
@@ -83,7 +91,6 @@
 			let classes_id = []
 			for(var i = 0 ; i < _classes.length ; i++ ){
 				classes_id.push(_classes[i].id)
-				//console.log(_classes[i].id)
 			}
 			for(var m = 0 ; m < classes_id.length ; m++ ){
 				console.log(classes_id[m])
@@ -178,6 +185,7 @@
 			
 
 		}
+
 
 		makeClass({
 			class_name:'center-text',
@@ -310,8 +318,8 @@
 			purpose:'Creates a swifty dropdown.Make sure to <br >&emsp;&emsp;&emsp;&emsp;&emsp;import jquery with &lt;script src="https://code.jquery.com/jquery-2.1.0.js"&gt;&lt;/script&gt; . <br>&emsp;&emsp;&emsp;&emsp;&emsp;swifty_js_toolkit@1.1.1 or higher with &lt;script src="https://unpkg.com/swifty_js_toolkit@1.1.1/swifty.js"&gt;&lt;/script&gt; <br>&emsp;&emsp;&emsp;&emsp;&emsp; font awesome with &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"&gt;',
 			codeEX:`<br>
 			&lt;div class="sw-dropdown"&gt; <br>
-			&emsp;&lt;h1 class="head" style="width: 200px;"&gt;Hello , world&lt;/h1&gt; <br>
-			&emsp;	&lt;div class="sw-options"&gt;<br>
+			&emsp;&lt;h1 class="head right/left" &gt;Hello , world&lt;/h1&gt; <br>
+			&emsp;	&lt;div class="sw-dropdown-body"&gt;<br>
 			&emsp;&emsp;&lt;a class="sw-dropdown-option">Item1 &lt;/a&gt; &lt;br&gt; &lt;br&gt;<br>
 			&emsp;&emsp;&lt;a class="sw-dropdown-option">Item2 &lt;/a&gt; &lt;br&gt; &lt;br&gt;<br>
 			&emsp;&emsp;&lt;a class="sw-dropdown-option">Item2 &lt;/a&gt; &lt;br&gt; &lt;br&gt;<br>
@@ -321,6 +329,28 @@
 			liveLink:'https://replit.com/@PrateekPathak1/swifty-css-wiki-sw-dropdown-class',
 			newHead:[true,'Dropdown']
 		})
+
+		let version ;
+		$.ajax({
+			url: 'https://unpkg.com/swifty-css/package.json',
+			type: 'get',
+			dataType: 'json',
+			success: function (data) {
+				version = data.version
+				$('#version').html(version)
+			}
+		});
+
+		let version2 ;
+		$.ajax({
+			url: 'https://unpkg.com/swifty_js_toolkit/package.json',
+			type: 'get',
+			dataType: 'json',
+			success: function (data) {
+				version2 = data.version
+				$('#version2').html(version2)
+			}
+		});
 	</script>
 </body>
 </html>
