@@ -5,8 +5,8 @@
 	<title>Swifty-css DOCS</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
-	<script src="https://unpkg.com/swifty_js_toolkit@1.1.2/swifty.js"></script>
-	<link rel="stylesheet" href="https://unpkg.com/swifty-css@1.1.1/swifty.css">
+	<script src="https://unpkg.com/swifty_js_toolkit@1.1.5/swifty.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swifty-css@1.1.4/swifty.css">
 
 </head>
 <style>
@@ -63,7 +63,7 @@
 		<input type="text" class="sw-inp" placeholder="Search all classes" id="search" oninput="search()">
 		<h1>Classes</h1>
 		<hr style="width:95%;margin: 0px auto;display: inline-block;">
-
+		<div class="sw-dropdowns"></div>
 	</div>
 
 
@@ -140,7 +140,7 @@
 			$("#content").append(div)
 
 			if (a.newHead[0]) {
-				$('.nav').append(`<div class="sw-dropdown" > 
+				$('.sw-dropdowns').append(`<div class="sw-dropdown" > 
 					<h2 class="head">${a.newHead[1]}</h2> 
 					<div class="sw-options" id='${a.newHead[1]}'>
 
@@ -166,7 +166,7 @@
 			$("#content").append(div)
 
 			if (a.newHead[0]) {
-				$('.nav').append(`<div class="sw-dropdown" > 
+				$('.sw-dropdowns').append(`<div class="sw-dropdown" > 
 					<h2 class="head">${a.newHead[1]}</h2> 
 					<div class="sw-options" id='${a.newHead[1]}'>
 

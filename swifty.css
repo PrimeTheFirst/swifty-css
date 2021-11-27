@@ -212,7 +212,7 @@
 .head{
    background: white;
    border-radius: 3px;
-   padding: 5px;
+   padding: 15px;
    width: 100%;
    text-align: left;
    margin-bottom: 15px;
@@ -226,13 +226,18 @@
 .sw-dropdown-option:hover{
    background:#EFEEEE ;
 }
-.sw-options{
+.sw-dropdown-body{
    padding-right: 20px;
    padding-left: 20px;
 }
-.down{
+.down-right{
    float: right;
    transition: 0.1s;
+}
+.down-left{
+   float: left;
+   transition: 0.1s;
+   margin-right: 10px;
 }
 
 
