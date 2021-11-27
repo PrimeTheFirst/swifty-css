@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sw-dropdown</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+	<script src="https://unpkg.com/swifty_js_toolkit@1.1.6/swifty.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swifty-css@1.1.6/swifty.css">
+
+
+	<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.3.1/styles/default.min.css">
+	<script src="https://unpkg.com/@highlightjs/cdn-assets@11.3.1/highlight.min.js"></script>
+
+</head>
+<body>
+	<br>
+	<a href="index.html" class="sw-btn-solid-primary-link"><i class="fas fa-arrow-left"></i> Back</a>
+	<br><br>
+
+	To use the sw-dropdown class , first import jquery,swifty_js_toolkit,font awesome , and swifty-css . 
+
+	<pre><code class="language-html">&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"&gt;
+&lt;script src="https://code.jquery.com/jquery-2.1.0.js"&lt;/script&gt;
+&lt;script src="https://unpkg.com/swifty_js_toolkit@1.1.6/swifty.js"&lt;/script&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/swifty-css@1.1.6/swifty.css"&gt;</code></pre>
+	
+	Now to use the dropdowns , we make a div that contains all the dropdowns of one class. For example , if you have a FAQ section that has multiple sections in it , and those sections have multiple questions it them , then this is extremely useful.So let's do just that . Create a div with class sw-dropdowns .Make sure it is plural .
+
+	<pre><code class="language-html">&lt;div class="sw-dropdowns"&gt;&lt;/div&gt; </code></pre>
+
+	Now inside this , we need to create multiple questions or dropdowns . So use the class sw-dropdown . Make sure it's <b><i>singular</i></b>
+	<pre><code class="language-html">&lt;div class="sw-dropdowns"&gt;
+	&lt;div class="sw-dropdown"&gt;&lt;/div&gt;
+&lt;/div&gt; </code></pre>	
+
+	Next add a question or dropdown title , depending on your use . 
+
+	<pre><code class="language-html">&lt;div class="sw-dropdowns"&gt;
+	&lt;div class="sw-dropdown"&gt;
+		&lt;div class="head"&gt;Wait ! Don't run it yet . We still need to add 1 more class to this div. &lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt; </code></pre>	
+	Now , depending on your use , you may want the dropdown arrow on a specific side . So simply give the head div another class of left or right. <b>NOTE</b>: This class is required.
+
+	<pre><code class="language-html">&lt;div class="sw-dropdowns"&gt;
+	&lt;div class="sw-dropdown"&gt;
+		&lt;div class="head right"&gt; Hello ,world !&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt; </code></pre>	
+	
+
+	Next we can prepare to add the options to the dropdown <b>or</b> the answer to a FAQ .Add the sw-dropdown-body class to a new div.
+
+		<pre><code class="language-html">&lt;div class="sw-dropdowns"&gt;
+	&lt;div class="sw-dropdown"&gt;
+		&lt;div class="head right"&gt;Hello ,world ! &lt;/div&gt;
+		&lt;div class="sw-dropdown-body"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt; </code></pre>	
+	
+
+	Then if you want options , then add multiple divs with class sw-dropdown-option inside the sw-dropdown-body.
+
+			<pre><code class="language-html">&lt;div class="sw-dropdowns"&gt;
+	&lt;div class="sw-dropdown"&gt;
+		&lt;div class="head right"&gt;Hello ,world ! &lt;/div&gt;
+		&lt;div class="sw-dropdown-body"&gt; 
+			&lt;div class="sw-dropdown-option"&gt;Item1 &lt;/div&gt;
+			&lt;div class="sw-dropdown-option"&gt;Item2 &lt;/div&gt;
+			&lt;div class="sw-dropdown-option"&gt;Item3 &lt;/div&gt;
+			&lt;div class="sw-dropdown-option"&gt;Item4 &lt;/div&gt;
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt; </code></pre>
+
+That's for the dropdown . Now the FAQ . Adding a paragraph to the dropdown/accordian is fairly simple . Simply replace the sw-dropdown-option with a p element.
+
+			<pre><code class="language-html">&lt;div class="sw-dropdowns"&gt;
+	&lt;div class="sw-dropdown"&gt;
+		&lt;div class="head right"&gt;Hello ,world ! &lt;/div&gt;
+		&lt;div class="sw-dropdown-body"&gt; 
+			&lt;p&gt;Hi , I'm the answer to a FAQ question . &lt;/p&gt;
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt; </code></pre>
+
+
+Example's :
+<br><br>
+
+<div class="sw-dropdowns">
+	<div class="sw-dropdown">
+		<div class="head right">Hello ,world ! </div>
+		<div class="sw-dropdown-body"> 
+			<div class="sw-dropdown-option">Item1 </div>
+			<div class="sw-dropdown-option">Item2 </div>
+			<div class="sw-dropdown-option">Item3 </div>
+			<div class="sw-dropdown-option">Item4 </div>
+		</div>
+
+	</div>
+</div> 
+
+
+<br><br>
+
+<div class="sw-dropdowns">
+	<div class="sw-dropdown">
+		<div class="head right">Hello ,world ! </div>
+		<div class="sw-dropdown-body"> 
+			<p>Hi , I'm the answer to a FAQ question . </p>
+		</div>
+
+	</div>
+</div> 
+
+	<script>hljs.highlightAll();</script>
+
+</body>
+</html>
