@@ -7,6 +7,7 @@
 	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 	<script src="https://unpkg.com/swifty_js_toolkit@1.1.5/swifty.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/swifty-css@1.1.4/swifty.css">
+	<link rel="shortcut icon" type="image/jpg" href="../logo.png"/>
 
 </head>
 <style>
@@ -343,7 +344,7 @@
 			newHead:[true,'Dropdown']
 		})
 
-		$('#sw-dropdown').append('<br> <br><a class="sw-btn-solid-primary-link" href="sw-dropdowns.html" style="margin-left:15px;">Read more <i class="fas fa-arrow-right"></i> </a> <br>')
+		$('#sw-dropdown').append('<br> <br><a class="sw-btn-solid-primary-link" href="sw-dropdowns." style="margin-left:15px;">Read more <i class="fas fa-arrow-right"></i> </a> <br>')
 		let version ;
 		$.ajax({
 			url: 'https://unpkg.com/swifty-css/package.json',
@@ -351,7 +352,11 @@
 			dataType: 'json',
 			success: function (data) {
 				version = data.version
-				$('#version').html(version)
+				if (version == '') {
+					$('#version').html("unknown.Please check your internet connection")
+				}else {
+					$('#version').html(version)
+				}
 			}
 		});
 
@@ -362,7 +367,11 @@
 			dataType: 'json',
 			success: function (data) {
 				version2 = data.version
-				$('#version2').html(version2)
+				if (version2 == '') {
+					$('#version2').html("unknown.Please check your internet connection")
+				}else {
+					$('#version2').html(version2)
+				}
 			}
 		});
 	</script>
