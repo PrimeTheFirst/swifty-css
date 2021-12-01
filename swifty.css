@@ -241,6 +241,40 @@
 }
 
 
+/*Cards*/
+[class*='sw-card']{
+   display: inline-block;
+   border-style: solid;
+   border-width: 0.05em;
+   border-color: #CDCDCD;
+   width: 335px;
+}
+[class*='sw-card-image']{
+   object-fit: cover;
+   border: initial;
+   width: inherit;
+}
+[class*='sw-card-body']{
+   width: inherit;
+   display: block;
+   border: initial;
+   padding-left: 10px;
+   padding-bottom: 20px;
+   overflow-wrap: break-word;
+
+}
+[class*='sw-card-title']{
+   margin-bottom: 10px;
+   border: initial;
+   font-size: 1.6em;
+} 
+[class*='sw-card-text']{
+   border: initial;
+   display: block;
+   margin: 10px;
+   margin-left: 0px; 
+
+} 
 
 
 @media screen and (max-width: 600px) {

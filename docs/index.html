@@ -344,7 +344,24 @@
 			newHead:[true,'Dropdown']
 		})
 
-		$('#sw-dropdown').append('<br> <br><a class="sw-btn-solid-primary-link" href="sw-dropdowns." style="margin-left:15px;">Read more <i class="fas fa-arrow-right"></i> </a> <br>')
+		makeClass({
+			class_name:'sw-card',
+			purpose:'Creates a swifty card.',
+			codeEX:`<br>
+				&lt;div class="sw-card"&gt; <br>
+		&emsp;&lt;img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="profile image" class="sw-card-image"&gt; <br>
+		&emsp;&lt;div class="sw-card-body"&gt;<br>
+			&emsp;&emsp;&lt;h3 class="sw-card-title"&gt;Card title&lt;/h3&gt;<br>
+			&emsp;&emsp;&lt;p class="sw-card-text"&gt;Some quick example text to build <br>&emsp;&emsp;on the card title and make up the bulk of the cards content.&lt;/p&gt;<br>
+			&emsp;&emsp;&lt;button class="sw-btn-solid-primary"&gt;Go somewhere&lt;/button&gt;<br>
+		&emsp;&lt;/div&gt;<br>
+	&lt;/div&gt;`,
+			liveLink:'https://replit.com/@PrateekPathak1/swifty-css-wiki-sw-card-class#index.html',
+			newHead:[true,'Cards']
+		})
+
+
+		$('#sw-dropdown').append('<br> <br><a class="sw-btn-solid-primary-link" href="sw-dropdowns.html" style="margin-left:15px;">Read more <i class="fas fa-arrow-right"></i> </a> <br>')
 		let version ;
 		$.ajax({
 			url: 'https://unpkg.com/swifty-css/package.json',
