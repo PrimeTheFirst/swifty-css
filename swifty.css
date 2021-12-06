@@ -257,6 +257,7 @@
    border-width: 0.05em;
    border-color: #CDCDCD;
    width: 335px;
+
 }
 [class*='sw-card-image']{
    object-fit: cover;
@@ -290,16 +291,17 @@
    border-style: solid;
    border-radius: 5px;
    padding: 10px;
-   
+   opacity: 1;
+   transition: 0.3s;
 }
 /*Sizing*/
-[class*='sw-alert'][class*=sm]{
+[class*=sm]{
    width: 15vw;
 }
-[class*='sw-alert'][class*=full]{
+[class*=full]{
    width: 96vw;
 }
-[class*='sw-alert'][class*=md]{
+[class*=md]{
    width:40vw;
 }
 
@@ -321,16 +323,19 @@
    color: white;
 }
 
-[class*=sw-alert-dismiss]{
+[class*='sw-alert-dismiss']{
    display: inline;
-   height: 2rem;
-   object-fit: cover;
    border: initial;
-   font-size: 30px;
+   float: right;
+   width: 1em;
+   padding:initial;
+   font-size: 25px;
+   height: 1em;
+   background-color: red;
+   margin: 0 auto;
    padding-left: 10px;
-   margin:0px auto 0px auto;
+   border-radius: 2em;
 }
-
 
 @media screen and (max-width: 600px) {
    [class*='sw-btn']{
