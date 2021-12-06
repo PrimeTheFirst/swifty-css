@@ -1,3 +1,12 @@
+/*Variables*/
+:root{
+   --primary:#0d6efd;
+   --secondary: #6c757d;
+   --danger:red;
+   --success:green;
+}
+
+
 /*Centering stuff*/
 .center-text{
    margin: 0;
@@ -68,32 +77,32 @@
 
 
 [class*=sw-btn-solid-primary]{
-   background: #0d6efd;
+   background: var(--primary);
    color: white;
-   border-color: #0d6efd;
+   border-color: var(--primary);
 }
 [class*=sw-btn-solid-primary]:focus{outline-color: #7fbdff;}
 
 
 [class*=sw-btn-solid-secondary]{
-   background: #6c757d;
+   background: var(--secondary);
    color: white;
-   border-color: #6c757d;
+   border-color: var(--secondary);
 }
 [class*=sw-btn-solid-secondary]:focus{outline-color: #b5babe;}
 
 [class*=sw-btn-solid-danger]{
-   background: red;
+   background:var(--danger);
    color: white;
-   border-color: red;
+   border-color: var(--danger);
 }
 [class*=sw-btn-solid-danger]:focus{outline-color: #ed9aa2;}
 
 
 [class*=sw-btn-solid-success]{
-   background: green;
+   background:var(--success);
    color: white;
-   border-color: green;
+   border-color: var(--success);
 }
 [class*=sw-btn-solid-success]:focus{outline-color: #93d3a2;}
 
@@ -115,11 +124,11 @@
 
 /*Primary outline styling start*/
 [class*=outline-primary]{
-   color: #0d6efd;
-   border-color: #0d6efd;
+   color: var(--primary);
+   border-color: var(--primary);
 }
 [class*=outline-primary]:hover{
-   background: #0d6efd;
+   background: var(--primary);
    color: white;
 }
 [class*=outline-primary]:focus{outline-color: #7fbdff;}
@@ -127,32 +136,32 @@
 
 
 [class*=outline-secondary]{
-   color: #6c757d;
-   border-color: #6c757d;
+   color: var(--secondary);
+   border-color: var(--secondary);
 }
 [class*=outline-secondary]:hover{
-   background: #6c757d;
+   background: var(--secondary);
    color: white;
 }
 [class*=outline-secondary]:focus{outline-color: #b5babe;}
 
 
 [class*=outline-danger]{
-   color: red;
-   border-color: red;
+   color:var(--danger);
+   border-color: var(--danger);
 }
 [class*=outline-danger]:hover{
-   background: red;
+   background: var(--danger);
    color: white;
 }
 [class*=outline-danger]:focus{outline-color: #ed9aa2;}
 
 [class*=outline-success]{
-   color: green;
-   border-color: green;
+   color: var(--success);
+   border-color: var(--success);
 }
 [class*=outline-success]:hover{
-   background: green;
+   background: var(--success);
    color: white;
 }
 [class*=outline-success]:focus{outline-color: #93d3a2;}
@@ -275,6 +284,52 @@
    margin-left: 0px; 
 
 } 
+
+/*Alerts*/
+[class*='sw-alert']{
+   border-style: solid;
+   border-radius: 5px;
+   padding: 10px;
+   
+}
+/*Sizing*/
+[class*='sw-alert'][class*=sm]{
+   width: 15vw;
+}
+[class*='sw-alert'][class*=full]{
+   width: 96vw;
+}
+[class*='sw-alert'][class*=md]{
+   width:40vw;
+}
+
+/*colors*/
+[class*='sw-alert-primary']{
+   background: var(--primary);
+   color: white;
+}
+[class*='sw-alert-secondary']{
+   background: var(--secondary);
+   color: white;
+}
+[class*='sw-alert-danger']{
+   background: var(--danger);
+   color: white;
+}
+[class*='sw-alert-success']{
+   background: var(--success);
+   color: white;
+}
+
+[class*=sw-alert-dismiss]{
+   display: inline;
+   height: 2rem;
+   object-fit: cover;
+   border: initial;
+   font-size: 30px;
+   padding-left: 10px;
+   margin:0px auto 0px auto;
+}
 
 
 @media screen and (max-width: 600px) {
