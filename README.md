@@ -16,6 +16,7 @@
 ## Table of contents
 - [Quick start](#quick-start)
 - [Status](#status)
+- [What's included](#whats-included)
 
 ## Quick start
 Several options are available for you to quickly get started with web development using swifty-css :
@@ -25,3 +26,24 @@ Several options are available for you to quickly get started with web developmen
 
 ## Status 
 [![npm version](https://img.shields.io/npm/v/swifty-css)](https://www.npmjs.com/package/swifty-css)
+
+
+## What's included
+
+Within the download you'll find the following directories and files:
+
+<details><summary>Download contents</summary>
+
+```text
+swifty-css/
+├── docs/
+|   ├──index.html
+│   ├──sw-dropdown.html
+├──.gitignore
+├── README.md
+├── example.html
+├── logo.png
+├── package.json
+├── swifty.css
+```
+</details>
