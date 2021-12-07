@@ -11,3 +11,14 @@
 </p>
 
 # Swifty css
+
+
+## Table of contents
+- [Quick start](#quick-start)
+
+
+## Quick start
+Several options are available for you to quickly get started with web development using swifty-css :
+- Clone the repo: `git clone https://github.com/PrateekPathak9002/swifty-css.git`
+- Download through npm: `npm install swifty-css`
+- Import with unpkg.com: `<script src='https://unpkg.com/swifty-css/swifty.css'></script>` 
