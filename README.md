@@ -17,6 +17,7 @@
 - [Quick start](#quick-start)
 - [Status](#status)
 - [What's included](#whats-included)
+- [Documentation](#documentation)
 
 ## Quick start
 Several options are available for you to quickly get started with web development using swifty-css :
@@ -47,3 +48,8 @@ swifty-css/
 ├── swifty.css
 ```
 </details>
+
+
+## Documentation
+Documentation is only available for the latest version . Upcoming versions will have separate documentation. 
+You can view the docs [here](https://prateekpathak9002.github.io/swifty-css/)
