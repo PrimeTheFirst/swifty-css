@@ -15,10 +15,13 @@
 
 ## Table of contents
 - [Quick start](#quick-start)
-
+- [Status](#status)
 
 ## Quick start
 Several options are available for you to quickly get started with web development using swifty-css :
 - Clone the repo: `git clone https://github.com/PrateekPathak9002/swifty-css.git`
 - Download through npm: `npm install swifty-css`
 - Import with unpkg.com: `<script src='https://unpkg.com/swifty-css/swifty.css'></script>` 
+
+## Status 
+[![npm version](https://img.shields.io/npm/v/swifty-css)](https://www.npmjs.com/package/swifty-css)
