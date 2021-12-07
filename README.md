@@ -53,3 +53,4 @@ swifty-css/
 ## Documentation
 Documentation is only available for the latest version . Upcoming versions will have separate documentation. 
 You can view the docs [here](https://prateekpathak9002.github.io/swifty-css/)
+You can also run example.html to view examples on some of swifty-csss' features.
