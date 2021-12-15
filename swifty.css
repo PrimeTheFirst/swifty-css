@@ -335,6 +335,10 @@
    margin: 0 auto;
    padding-left: 10px;
    border-radius: 2em;
+   
+}
+[class*='sw-alert-dismiss']:hover{
+   cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
