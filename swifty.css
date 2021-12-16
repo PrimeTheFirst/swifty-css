@@ -293,6 +293,8 @@
    padding: 10px;
    opacity: 1;
    transition: 0.3s;
+   display: inline-block;
+   font-size:larger;
 }
 /*Sizing*/
 [class*=sm]{
@@ -330,12 +332,12 @@
    width: 1em;
    padding:initial;
    font-size: 25px;
-   height: 1em;
+   height: 1.2em;
    background-color: red;
    margin: 0 auto;
-   padding-left: 10px;
+   padding-left: 0.3em;
+   padding-bottom: 0.1em;
    border-radius: 2em;
-   
 }
 [class*='sw-alert-dismiss']:hover{
    cursor: pointer;
