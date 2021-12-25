@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sw-dropdown</title>
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+	<script src="https://unpkg.com/swifty_js_toolkit@1.1.8/swifty.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swifty-css@1.2.3/swifty.css">
+
+
+	<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.3.1/styles/default.min.css">
+	<script src="https://unpkg.com/@highlightjs/cdn-assets@11.3.1/highlight.min.js"></script>
+	<link rel="shortcut icon" type="image/jpg" href="../logo.png"/>
+
+</head>
+<body>
+	<br>
+	<a href="index.html" class="sw-btn-solid-primary-link"><i class="fas fa-arrow-left"></i> Back</a>
+	<br><br>
+
+	To use the sw-alert class , first import jquery,swifty_js_toolkit, and swifty-css . 
+
+
+&lt;script src="https://code.jquery.com/jquery-2.1.0.js"&lt;/script&gt;
+&lt;script src="https://unpkg.com/swifty_js_toolkit@1.1.8/swifty.js"&lt;/script&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/swifty-css@1.2.3/swifty.css"&gt;</code></pre>
+	
+	Now to use the alerts , we make a div for the alert. Its class should be sw-alert-type-size. type can be primary/secondary/danger/success.Size can be sm/md/full. 
+
+	<pre><code class="language-html">&lt;div class="sw-alert-primary-md"&gt;&lt;/div&gt; </code></pre>
+
+	Now inside this , you should add the text you want to display on this alert.
+	<pre><code class="language-html">&lt;div class="sw-alert-primary-md"&gt;
+	&emsp;Hi! I'm a swifty alert !
+&lt;/div&gt; </code></pre>	
+
+	Thats it for a simple non-dismissable alert.Continue reading for dismissing the alert.
+
+    <h2>Dismissing</h2>
+    To dismiss, simply add -dismissable to the end of the class. Along with that , add a div inside the main div that has &amp;times as the content and class sw-alert-dismiss.
+	<pre><code class="language-html">&lt;div class="sw-alert-primary-md-dismissable"&gt <br>
+        &emsp; Hi . You are reading a cool alert . <br> 
+        &emsp; &lt;div class="sw-alert-dismiss"&gt;&amp;times;&lt;/div&gt; <br>
+&lt;/div&gt; </code></pre>	
+	Now, you may want to change the color of the background and text. You <i>can</i> do that using css , but also using swifty-css's way.
+
+	<pre><code class="language-html">&lt;div class="sw-alert-primary-md-dismissable"&gt <br>
+        &emsp; Hi . You are reading a cool alert . <br> 
+        &emsp; &lt;div class="sw-alert-dismiss"&gt;&amp;times; &lt;!--{bg_color:'red' , color:'black'}--&gt;&lt;/div&gt; <br>
+&lt;/div&gt; </code></pre>	
+	
+That's it ! 
+
+
+Example's :
+<br><br>
+
+<div class="sw-alert-primary-md-dismissable">
+    Hi . You are reading a sw-alert . 
+    <div class="sw-alert-dismiss">&times; <!--{bg_color:'red' , color:'black'}--></div>
+</div>
+
+	<script>hljs.highlightAll();</script>
+
+</body>
+</html>
