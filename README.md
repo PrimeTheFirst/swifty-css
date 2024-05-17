@@ -7,7 +7,7 @@
 <p align="center">
   Sleek, quick,concise, and powerful front-end framework for faster and easier web development.
   <br>
-  <a href="https://prateekpathak9002.github.io/swifty-css/"><strong>Explore swifty-css docs »</strong></a>
+  <a href="https://primethefirst.github.io/swifty-css/"><strong>Explore swifty-css docs »</strong></a>
 </p>
 
 # Swifty css
