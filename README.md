@@ -51,4 +51,4 @@ swifty-css/
 
 
 ## Documentation
-You can view the docs [here](https://prateekpathak9002.github.io/swifty-css/).You can also run the example.html file to view examples on some of the features of swifty-css.
+You can view the docs [here](https://primethefirst.github.io/swifty-css/).You can also run the example.html file to view examples on some of the features of swifty-css.
